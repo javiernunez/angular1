@@ -1,0 +1,122 @@
+.product-list {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+
+  .title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .search-bar {
+      flex-grow: 1;
+      margin-right: 0.5rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      outline: none;
+
+      &:focus {
+        border-color: #007bff;
+      }
+    }
+
+    .btn {
+      background-color: #007bff;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
+
+  .product-list-items {
+    list-style: none;
+    padding: 0;
+
+    .product-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem 0;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      transition: box-shadow 0.2s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .product-info {
+        display: flex;
+        align-items: center;
+
+        .product-id {
+          font-weight: bold;
+          margin-right: 1rem;
+          color: #666;
+        }
+
+        .product-name {
+          font-size: 1rem;
+          color: #333;
+        }
+      }
+
+      .product-price {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #28a745;
+      }
+    }
+  }
+
+  .load-more-btn {
+    display: block;
+    margin: 1rem auto;
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+      background-color: #218838;
+    }
+  }
+
+  .loading-indicator {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 1rem;
+  }
+}
